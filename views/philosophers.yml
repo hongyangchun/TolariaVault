@@ -1,0 +1,9 @@
+name: 哲学家
+icon: null
+color: null
+sort: "property:era:asc"
+filters:
+  all:
+    - field: type
+      op: equals
+      value: 哲学家

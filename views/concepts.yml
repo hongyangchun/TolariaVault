@@ -1,0 +1,9 @@
+name: 概念
+icon: null
+color: null
+sort: "title:asc"
+filters:
+  all:
+    - field: type
+      op: equals
+      value: 概念
