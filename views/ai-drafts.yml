@@ -1,0 +1,9 @@
+name: AI起草·待验收
+icon: null
+color: null
+sort: "modified:desc"
+filters:
+  all:
+    - field: origin
+      op: contains
+      value: 待验收

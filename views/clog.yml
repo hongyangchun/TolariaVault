@@ -1,0 +1,9 @@
+name: CLOG 流水
+icon: notebook
+color: "#6b7280"
+sort: "created:desc"
+filters:
+  all:
+    - field: type
+      op: equals
+      value: 日志

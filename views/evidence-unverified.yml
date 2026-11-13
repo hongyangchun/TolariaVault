@@ -1,0 +1,12 @@
+name: 待验证的证据
+icon: null
+color: null
+sort: "modified:desc"
+filters:
+  all:
+    - field: type
+      op: equals
+      value: 证据单元
+    - field: confidence
+      op: equals
+      value: 待验证

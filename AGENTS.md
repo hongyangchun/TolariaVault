@@ -10,6 +10,15 @@ This is a [Tolaria](https://github.com/refactoringhq/tolaria) vault.
 
 Keep this file focused on vault-specific conventions. For general Tolaria behavior, use the bundled Tolaria agent docs path provided by the app session context.
 
+## 本库约定（优先于下方通用约定）
+
+- **来源可溯（强制）**：每条内容可回答谁写的。agent 起草必须盖章 `origin: AI起草（待验收）`（连同相应 `confidence: 待验证`）；UI 手写新建默认 `人写`（Type 文档默认值）。`confidence` 留空 = 非主张性笔记（叙事、日程、日志类），不参与验证流程。词表见 [[note]]。
+- **人确认（强制）**：验收 = ① 通读全文，核对断言与出处；② `origin` 改 `AI起草（已验收）`；③ `confidence` 联动（核对过出处 → `已验证`；有理由怀疑 → `存疑`）；④ 有异议直接改正文，改后 origin 视情况标 `混合` 或 `人写`。**验收只能由用户执行，agent 不得自行把任何笔记标成已验收。** 协议出处：[[落地方案的差距审计]] P1。
+- **关系受控**：关系一律用 wikilink 表达，保持零悬空（巡检第 1 步核查）。
+- **CLOG 提升管道（强制）**：[[日志]] 内容提升为类型化笔记必须带理由、可拒绝、不得静默改写；批准后只在原条目末尾追加 `→ 已提升`，原文不动。
+- **触发词**：用户说「跑每周巡检」→ 按 [[每周巡检清单]] 执行，只报告与提议，不静默改动。
+- **可撤销**：批量改动前先 commit。2026-11 之前的旧笔记（虚无主义概念系列）默认视为人写，不补标 provenance。
+
 ## Core conventions
 
 - Notes are Markdown files.

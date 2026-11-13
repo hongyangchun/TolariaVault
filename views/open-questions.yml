@@ -1,0 +1,12 @@
+name: 开放问题
+icon: null
+color: null
+sort: "modified:desc"
+filters:
+  all:
+    - field: type
+      op: equals
+      value: 问题
+    - field: status
+      op: equals
+      value: Open
